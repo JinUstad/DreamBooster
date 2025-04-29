@@ -690,3 +690,7 @@ text-decoration: none;
   }
 
 }
+
+.team__member-image img {
+  height: 305px;
+}
