@@ -34,10 +34,13 @@ body {
   color: var(--color-white);
   background: var(--color-bg);
 }
-a{
+
+a {
   text-decoration: none;
 }
-ol ,ul {
+
+ol,
+ul {
   padding-left: 0;
 }
 
@@ -98,7 +101,8 @@ img {
   font-weight: 500;
   transition: var(--transition);
 }
-.nav__container a{
+
+.nav__container a {
   text-decoration: none;
 }
 
@@ -410,6 +414,7 @@ footer ul li a:hover {
   padding: 1.2rem 0;
   border-top: 1px solid var(--color-bg2);
 }
+
 /* .Parmalinks li a:hover{
 text-decoration: none;
 } */
@@ -418,217 +423,270 @@ text-decoration: none;
 
 /* =============MEDIA QUARIES FOR THE TABLET SCREEN ===============*/
 @media screen and (max-width: 1024px) {
-  .container{
+  .container {
     width: var(--container-width-md);
   }
 
-  h1{
+  h1 {
     font-size: 2.2rem;
   }
 
-  h2{
+  h2 {
     font-size: 1.7rem;
   }
 
-  h3{
+  h3 {
     font-size: 1.4rem;
   }
 
-  h4{
+  h4 {
     font-size: 1.2rem;
   }
 
-/* ======================HIDING OF THE NAVBAR ================== */
-nav button {
-  display: inline-block;
-  background: transparent;
-  font-size: 1.8rem;
-  color: var(--color-white);
-  cursor: pointer;
-}
-
-nav button#close-menu-btn{
-  display: none;
-}
-
-.nav__menu{
-  position: fixed;
-  top: 5rem;
-  right: 5%;
-  height: fit-content;
-  width: 18rem;
-  flex-direction: column;
-  gap: 0;
-  display: none;
-}
-
-.nav__menu li {
-  width: 100%;
-  height: 5.8rem;
-  animation: animateNavItems 400ms linear forwards;
-  transform-origin: top right;
-  opacity: 0;
-}
-
-.nav__menu li:nth-child(2){
-  animation-delay: 200ms;
-}
-
-.nav__menu li:nth-child(3){
-  animation-delay: 400ms;
-}
-
-.nav__menu li:nth-child(4){
-  animation-delay: 600ms;
-}
-
-@keyframes animateNavItems {
-  0%{
-    transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+  /* ======================HIDING OF THE NAVBAR ================== */
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    cursor: pointer;
   }
-  100%{
-    transform: rotateZ(0deg) rotateX(0deg) scale(1);
-    opacity: 1;
+
+  nav button#close-menu-btn {
+    display: none;
   }
-}
 
-.nav__menu li a{
-  background: var(--color-primary);
-  box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-}
+  .nav__menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
 
-.nav__menu li a:hover{
-  background: var(--color-bg2);
-  color: var(--color-white);
-}
+  .nav__menu li {
+    width: 100%;
+    height: 5.8rem;
+    animation: animateNavItems 400ms linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
 
-/* ====================== HEADER ================== */
-header{
-  height: 52vh;
-  margin-bottom: 4rem;
-}
+  .nav__menu li:nth-child(2) {
+    animation-delay: 200ms;
+  }
 
-.header__container{
-  gap: 0;
-  padding-bottom: 3rem;
-}
+  .nav__menu li:nth-child(3) {
+    animation-delay: 400ms;
+  }
 
-/* ====================== CATOGERIES ================== */
-.categories{
-  height: auto;
-}
+  .nav__menu li:nth-child(4) {
+    animation-delay: 600ms;
+  }
 
-.catogeries__container{
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
+  @keyframes animateNavItems {
+    0% {
+      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
 
-.categories__left{
-  margin-right: 0;
-}
+    100% {
+      transform: rotateZ(0deg) rotateX(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .nav__menu li a {
+    background: var(--color-primary);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .nav__menu li a:hover {
+    background: var(--color-bg2);
+    color: var(--color-white);
+  }
+
+  /* ====================== HEADER ================== */
+  header {
+    height: 52vh;
+    margin-bottom: 4rem;
+  }
+
+  .header__container {
+    gap: 0;
+    padding-bottom: 3rem;
+  }
+
+  /* ====================== CATOGERIES ================== */
+  .categories {
+    height: auto;
+  }
+
+  .catogeries__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .categories__left {
+    margin-right: 0;
+  }
 
 
-/* ====================== POPULAR COURSES ================== */
-.course{
-  margin-top: 0;
-}
+  /* ====================== POPULAR COURSES ================== */
+  .course {
+    margin-top: 0;
+  }
 
-.courses__container{
-  grid-template-columns: 1fr 1fr;
-}
+  .courses__container {
+    grid-template-columns: 1fr 1fr;
+  }
 
-/* ====================== FAQs ================== */
-.faqs__container{
-  grid-template-columns: 1fr;
-}
+  /* ====================== FAQs ================== */
+  .faqs__container {
+    grid-template-columns: 1fr;
+  }
 
-.faq{
-  padding: 1.5rem;
-}
-/* ====================== FOOTER ================== */
-.footer__container{
-  grid-template-columns: 1fr 1fr;
-}
+  .faq {
+    padding: 1.5rem;
+  }
+
+  /* ====================== FOOTER ================== */
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 
 /* ====================== MEDIA QUERIES (PHONE) ================== */
 @media screen and (max-width : 600px) {
-  .container{
+  .container {
     width: var(--container-width-sm);
   }
 
-/* ====================== NAVBAR ================== */
-.nav__menu{
-  right: 3%;
+  /* ====================== NAVBAR ================== */
+  .nav__menu {
+    right: 3%;
+  }
+
+  /* ====================== HEADER ================== */
+  header {
+    height: 100vh;
+  }
+
+  .header__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .header__left p {
+    margin-bottom: 1.3rem;
+  }
+
+  /* ====================== CATEGORIES ================== */
+  .catogeries__right {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+  .catogory {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .catogory__icon {
+    margin-top: 4px;
+    display: inline-block;
+  }
+
+  .categories__left p {
+    text-align: center;
+  }
+
+  .categories__left h1 {
+    text-align: center;
+  }
+
+  /* ====================== POPULAR COURSES ================== */
+
+  .courses__container {
+    grid-template-columns: 1fr;
+  }
+
+  /* ====================== TESTIMONIALS ================== */
+  .testimonial__body {
+    padding: 1.2rem;
+  }
+
+  /* ====================== FOOTER ================== */
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer__1 p {
+    margin: 1rem auto;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
 }
 
-/* ====================== HEADER ================== */
-header{
-  height: 100vh;
-}
+@media(max-width:426px) {
+  .courses {
+    margin-top: 0rem !important;
+  }
 
-.header__container{
-  grid-template-columns: 1fr;
-  text-align: center;
-  margin-top: 0;
-}
-.header__left p {
-  margin-bottom: 1.3rem;
-}
+  section {
+    padding: 2rem 0 !important;
+  }
 
-/* ====================== CATEGORIES ================== */
-.catogeries__right{
-  grid-template-columns: 1fr 1fr;
-  gap: 0.7rem;
-}
+  .btn,
+  .btn-primery {
+    color: white;
+  }
 
-.catogory{
-  padding: 1rem;
-  border-radius: 1rem;
-}
+  section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 
-.catogory__icon{
-  margin-top: 4px;
-  display: inline-block;
-}
+  .faq {
+    padding: 1rem;
+  }
 
-.categories__left p{
-  text-align: center;
-}
+  .testimonials__container {
+    margin-bottom: -1rem;
+  }
 
-.categories__left h1{
-  text-align: center;
-}
+  .footer__copyright {
+    margin-top: 2rem !important;
+  }
 
-/* ====================== POPULAR COURSES ================== */
+  .footer__container {
 
-.courses__container{
-  grid-template-columns: 1fr;
-}
+    padding-top: 2rem;
+  }
 
-/* ====================== TESTIMONIALS ================== */
-.testimonial__body {
-  padding: 1.2rem;
-}
+  .contact__container {
+    margin: 0rem auto !important;
+  }
 
-/* ====================== FOOTER ================== */
-.footer__container{
-  grid-template-columns: 1fr;
-  text-align: center;
-  gap: 2rem;
-}
+  .send-btn {
+    color: var(--color-danger) !important;
+  }
 
-.footer__1 p{
-  margin: 1rem auto;
-}
-
-.footer__socials{
-  justify-content: center;
-}
+  .contact__aside {
+    margin-top: 3rem;
+  }
 
 }
