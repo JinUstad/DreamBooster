@@ -694,3 +694,11 @@ text-decoration: none;
 .team__member-image img {
   height: 305px;
 }
+
+@media(max-width:1200px) {
+  article.catogory {
+    height: 307px;
+    width: 190px;
+  }
+}
+
