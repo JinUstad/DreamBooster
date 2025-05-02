@@ -641,7 +641,8 @@ text-decoration: none;
 
 }
 
-@media(max-width:426px) {
+@media(max-width:426px) and (min-width:376px) {
+  
   .courses {
     margin-top: 0rem !important;
   }
@@ -695,10 +696,10 @@ text-decoration: none;
   height: 305px;
 }
 
-@media(max-width:1200px) {
+/* @media(max-width:1201px) {
   article.catogory {
     height: 307px;
     width: 190px;
   }
-}
+} */
 
