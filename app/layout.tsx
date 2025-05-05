@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'DreamBooster',
   description: 'Er Gul Mohammad',
   generator: 'Er Gul Mohammad',
+  icons: {
+    icon: '/favicon.ico', 
+  },
 }
 
 export default function RootLayout({
