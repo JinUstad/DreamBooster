@@ -43,7 +43,7 @@ export default function CourseCard({ title, description, image, level, duration,
       </div>
       <div className="p-6 pt-0 mt-auto">
         <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
-          <Link href="/courses/details">Enroll Now</Link>
+          <Link href="/contact">Enroll Now</Link>
         </Button>
       </div>
     </div>
