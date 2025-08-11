@@ -69,7 +69,7 @@ export default function ContactPage() {
 
               {/* Contact Form */}
               <div className="bg-white rounded-lg shadow-lg p-8">
-                <h2 className="text-2xl font-bold mb-6 text-blue-700">Send Us a Message <b className="text-red-700">Under Working Contact Form</b></h2>
+                <h2 className="text-2xl font-bold mb-6 text-blue-700">Send Us a Message <b className="text-red-500">Working Is Progress</b></h2>
                 <form>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
