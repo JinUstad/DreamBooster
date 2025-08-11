@@ -86,7 +86,7 @@ export default function BlogPage() {
     },
   ]
 
-  const categories = ["All", "JavaScript", "React", "CSS", "TypeScript", "Career", "Trends", "Accessibility"]
+  const categories = ["All"]
 
   return (
     <div className="min-h-screen flex flex-col">
